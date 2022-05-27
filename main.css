@@ -1,0 +1,142 @@
+body{
+    margin-left: 10px;
+    margin-top: 15px;
+    /* color:aqua*/
+    /* background-color: #00FFAB; */
+}
+h1{
+    font-size: 20px;
+
+    font-weight: bold;
+}
+td{
+    text-align:center;
+    vertical-align: middle;
+}
+input.largerCheckbox {
+    width: 40px;
+    height: 40px;
+    margin-left: 60px;
+    accent-color: green;
+    background-color: #B8F1B0!important;
+}
+
+.largerCheckbox label {
+    display: inline-block;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 20px;
+    color: black !important;
+
+}
+.largerCheckbox input {
+    /* text-align: center; */
+    accent-color: green; ;
+    vertical-align: middle;
+  }
+.largerCheckbox label span {
+    vertical-align: middle;
+}
+
+input.mediumCheckbox{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    accent-color: green;
+}
+.mediumCheckbox label {
+    display: inline-block;
+    padding-right: 15px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 15px;
+
+}
+.mediumCheckbox input {
+
+    text-align: center;
+    accent-color: green;
+    vertical-align: middle;
+    /* horizontal-align: middle; */
+  }
+.mediumCheckbox label span {
+    vertical-align: middle;
+}
+input.smallCheckbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 100% !important;
+    margin-left: 0px;
+    accent-color: green;
+}
+.smallCheckbox label {
+    display: inline-block;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 15px;
+
+}
+.smallCheckbox input {
+    text-align: center;
+    accent-color: green;
+    vertical-align: middle;
+  }
+.smallCheckbox label span {
+    vertical-align: middle;
+}
+
+#customTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 98%;
+  }
+  
+#customTable td, #customTable th {
+    border: 0.5px solid black;
+    padding: 8px;
+    height: 27px !important;
+    font-weight: bold;
+  }
+  
+  /* #customTable tr:nth-child(even){background-color: #f2f2f2;} */
+  
+  #customTable tr:hover {background-color: #ddd;}
+  
+  #customTable th {
+    padding-top: 5px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    background-color: #DCDCDC;
+    color: black;
+  }
+.blank_row
+{
+    height: 27px !important; 
+    background-color: #FFFFFF;
+    border: 0.5px solid black !important;
+    padding: 8px !important;
+
+}
+.button {
+    border: none;
+    color: white;
+    margin-left: 100px;
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin: 4px 2px;
+    border-radius: 40px;
+  }
+.NextButton {
+    background-color: #04AA6D;
+}
+.ResetButton {
+    background-color: red
+}

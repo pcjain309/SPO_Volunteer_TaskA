@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <h1> STEP 2/5 (Eligibility Matrix) </h1>
+    <br>
+    <br>
+
+    <div class="ps-5 bg-light largerCheckbox">
+        <table>
+            <tr>
+                <div >
+                    <input type="checkbox" id="Jee checkbox" class="largerCheckbox" name="JEE Checkbox">
+                    <label class="largerCheckbox"> &emsp; &emsp;&emsp;&emsp; SELECT ALL BRANCHES AND PROGRAMMES COMING FROM JEE ADVANCED</label>
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    <input type="checkbox" id="Gate checkbox" class="largerCheckbox" >
+                    <label class="largerCheckbox"> &emsp; &emsp;&emsp;&emsp;&emsp;&emsp; SELECT ALL BRANCHES AND PROGRAMMES COMING FROM GATE</label>
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    <input type="checkbox" id="JAM checkbox" class="largerCheckbox" >
+                    <label class="largerCheckbox"> &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;SELECT ALL BRANCHES AND PROGRAMMES COMING FROM JAM</label>
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    <input type="checkbox" id="CAT checkbox" class="largerCheckbox" >
+                    <label class="largerCheckbox"> &emsp; &emsp;&emsp;&emsp;&emsp;&emsp; SELECT ALL BRANCHES AND PROGRAMMES COMING FROM CAT</label>
+                </div>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <table id="customTable">
+        <thead >
+            <tr>
+                <th scope="col">Program</th>
+                <th scope="col">    
+                    <div >
+                        <label > All</label>
+                        <input type="checkbox" id="All checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > AE</label>
+                        <input type="checkbox" id="AE checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label >BSBE</label>
+                        <input type="checkbox" id="BSBE checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > CE</label>
+                        <input type="checkbox" id="CE checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > CHE</label>
+                        <input type="checkbox" id="CHE checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > CSE</label>
+                        <input type="checkbox" id="CSE checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > EE</label>
+                        <input type="checkbox" id="EE checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > ES</label>
+                        <input type="checkbox" id="ES checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label> ME</label>
+                        <input type="checkbox" id="ME checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > MSE</label>
+                        <input type="checkbox" id="MSE checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > PHY</label>
+                        <input type="checkbox" id="PHY checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > CHM</label>
+                        <input type="checkbox" id="CHM checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > MTH</label>
+                        <input type="checkbox" id="MTH checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > ECO</label>
+                        <input type="checkbox" id="ECO checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > DES</label>
+                        <input type="checkbox" id="DES  checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > IME</label>
+                        <input type="checkbox" id="IME checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > CGS</label>
+                        <input type="checkbox" id="CGS checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > HSS</label>
+                        <input type="checkbox" id="HSS checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label> EEM</label>
+                        <input type="checkbox" id="EEM checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > MSP</label>
+                        <input type="checkbox" id="MSP checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > NET</label>
+                        <input type="checkbox" id="NET checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > PSE</label>
+                        <input type="checkbox" id="PSE checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                <th scope="col">
+                    <div >
+                        <label > STATS</label>
+                        <input type="checkbox" id="STATS checkbox" class="smallCheckbox" >
+                    </div>
+                </th>
+                        
+            </tr>
+
+        </thead>
+        <tbody>
+            <!-- /* The first blank_row of the table start */ -->
+            <tr class="blank_row">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- /* The first blank_row of the table end*/ -->
+
+            <!-- /* Row 2 of the table start */ -->
+            <tr >
+                <td scope="row">
+                    BT/BS/Double Major
+                </td>
+                <td  class="Row">
+                    <input type="checkbox" id="All" class="mediumCheckbox Row " >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="AE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="BSBE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CHE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CSE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="EE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ES" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ME" class="mediumCheckbox Row" name="JEE">
+                </td>
+                <td>
+                    <input type="checkbox" id="MSE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="PHY" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CHM" class="mediumCheckbox Row" name ="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="MTH" class="mediumCheckbox Row" name ="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ECO" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="DES" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="IME" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CGS" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="HSS" class="mediumCheckbox Row" >
+                </td>
+                <td>
+                    <input type="checkbox" id="EEM" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="MSP" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="NET" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="PSE" class="mediumCheckbox Row" >
+                </td>
+                <td>
+                    <input type="checkbox" id="STATS" class="mediumCheckbox Row" >
+                </td>
+            </tr>
+            <!-- /* Row 2 of the table end */ -->
+
+            <!-- /* Row 3 of the table start */ -->
+            <tr class ="Row">
+                <td scope="row">
+                    MT/MSc/MS(Research)
+                </td>
+                <td class="Row">
+                    <input type="checkbox" id="All" class="mediumCheckbox Row MT/MSc/MS(Research)" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="AE" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="BSBE" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CE" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CHE" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CSE" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="EE" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ES" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ME" class="mediumCheckbox Row" name="GATE">
+                </td>
+                <td>
+                    <input type="checkbox" id="MSE" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="PHY" class="mediumCheckbox Row" name="JAM">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CHM" class="mediumCheckbox Row" name ="JAM">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="MTH" class="mediumCheckbox Row" name ="JAM">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ECO" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="DES" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="IME" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CGS" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="HSS" class="mediumCheckbox Row" name="GATE">
+                </td>
+                <td>
+                    <input type="checkbox" id="EEM" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="MSP" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="NET" class="mediumCheckbox Row" name="GATE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="PSE" class="mediumCheckbox Row" name="GATE">
+                </td>
+                <td>
+                    <input type="checkbox" id="STATS" class="mediumCheckbox Row" name="JAM">
+                </td>
+            
+            </tr>
+            <!-- /* Row 3 of the table end */ -->
+
+            <!-- /* Row 4 of the table start */ -->
+            <tr class ="Row">
+
+                <td scope="row">
+                    Dual
+                </td>
+                <td class="Row">
+                    <input type="checkbox" id="All" class="mediumCheckbox Row " >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="AE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="BSBE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CHE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CSE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="EE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ES" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ME" class="mediumCheckbox Row" name="JEE">
+                </td>
+                <td>
+                    <input type="checkbox" id="MSE" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="PHY" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CHM" class="mediumCheckbox Row" name ="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="MTH" class="mediumCheckbox Row" name ="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ECO" class="mediumCheckbox Row" name="JEE">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="DES" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="IME" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CGS" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="HSS" class="mediumCheckbox Row" >
+                </td>
+                <td>
+                    <input type="checkbox" id="EEM" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="MSP" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="NET" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="PSE" class="mediumCheckbox Row" >
+                </td>
+                <td>
+                    <input type="checkbox" id="STATS" class="mediumCheckbox Row" >
+                </td>
+            </tr>
+            <!-- /* Row 4 of the table end */ -->
+
+            <!-- /* Row 5 of the table start */ -->
+            <tr class ="Row">
+                <td scope="row">
+                    MDes
+                </td>
+                <td class="Row">
+                    <input type="checkbox" id="All" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="AE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="BSBE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CHE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CSE" class="mediumCheckbox Row">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="EE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ES" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ME" class="mediumCheckbox Row" >
+                </td>
+                <td>
+                    <input type="checkbox" id="MSE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="PHY" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CHM" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="MTH" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ECO" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="DES" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="IME" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CGS" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="HSS" class="mediumCheckbox Row" >
+                </td>
+                <td>
+                    <input type="checkbox" id="EEM" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="MSP" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="NET" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="PSE" class="mediumCheckbox Row" >
+                </td>
+                <td>
+                    <input type="checkbox" id="STATS" class="mediumCheckbox Row" >
+                </td>
+            </tr>
+            <!-- /* Row 5 of the table end */ -->
+
+            <!-- /* Row 6 of the table start */ -->
+            <tr class="Row">
+                <td scope="row">
+                    MBA
+                </td>
+                <td class="Row">
+                    <input type="checkbox" id="All" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="AE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="BSBE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CHE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CSE" class="mediumCheckbox Row">
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="EE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ES" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ME" class="mediumCheckbox Row" >
+                </td>
+                <td>
+                    <input type="checkbox" id="MSE" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="PHY" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CHM" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="MTH" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="ECO" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="DES" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="IME" class="mediumCheckbox Row" name="CAT" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="CGS" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="HSS" class="mediumCheckbox Row" >
+                </td>
+                <td>
+                    <input type="checkbox" id="EEM" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="MSP" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="NET" class="mediumCheckbox Row" >
+                </td>
+                
+                <td>
+                    <input type="checkbox" id="PSE" class="mediumCheckbox Row" >
+                </td>
+                <td>
+                    <input type="checkbox" id="STATS" class="mediumCheckbox Row" >
+                </td>
+            </tr>
+            <!-- /* Row 6 of the table end */ -->
+
+            <!-- /* Row 7 of the table start */ -->
+            <tr class ="Row">
+
+                    <td scope="row">
+                        Phd
+                    </td>
+                    <td class="Row">
+                        <input type="checkbox" id="All" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="AE" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="BSBE" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="CE" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="CHE" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="CSE" class="mediumCheckbox Row">
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="EE" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="ES" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="ME" class="mediumCheckbox Row" >
+                    </td>
+                    <td>
+                        <input type="checkbox" id="MSE" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="PHY" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="CHM" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="MTH" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="ECO" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="DES" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="IME" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="CGS" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="HSS" class="mediumCheckbox Row" >
+                    </td>
+                    <td>
+                        <input type="checkbox" id="EEM" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="MSP" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="NET" class="mediumCheckbox Row" >
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" id="PSE" class="mediumCheckbox Row" >
+                    </td>
+                    <td>
+                        <input type="checkbox" id="STATS" class="mediumCheckbox Row" >
+                    </td>
+            </tr>
+            <!-- /* Row 7 of the table end */ -->
+        </tbody>
+    </table>
+    <br>
+    <table class="table table-borderless" style="font-weight: bold;">
+        <tbody>
+          <tr>
+            <td>AE AEROSPACE ENGINEERING</td>
+            <td>BSBE BIOLOGICAL SCIENCES AND BIOENGINEERING</td>
+            <td>CE CIVIL ENGINEERING</td>
+          </tr>
+          <tr>
+            <td>CHE CHEMICAL ENGINEERING</td>
+            <td>CSE COMPUTER SCIENCE AND ENGINEERING</td>
+            <td>EE ELECTRICAL ENGINEERING</td>
+          </tr>
+          <tr>
+            <td>ES EARTH SCIENCES</td>
+            <td>ME MECHANICAL ENGINEERING</td>
+            <td>MSE MATERIALS SCIENCE AND ENGINEERING</td>
+          </tr>
+          <tr>
+            <td>PHY PHYSICS</td>
+            <td>CHM CHEMISTRY</td>
+            <td>MTH MATHEMATICS AND SCIENTIFIC COMPUTING</td>
+          </tr>
+          <tr>
+            <td>ECO ECONOMICS</td>
+            <td>DES DESIGN PROGRAM</td>
+            <td>IME INDUSTRIAL MANAGEMENT AND ENGINEERING</td>
+          </tr>
+          <tr>
+            <td>CGS COGNITIVE SCIENCES</td>
+            <td>HSS HUMANITIES AND SOCIAL SCIENCES</td>
+            <td>EEM ENVIRONMENTAL ENGINEERING AND MANAGEMENT</td>
+          </tr>
+          <tr>
+            <td>MSP MATERIALS SCIENCE PROGRAM</td>
+            <td>NET NUCLEAR ENGINEERING AND TECHNOLOGY</td>
+            <td>PSE PHOTONICS SCIENCE AND ENGINEERING</td>
+          </tr>
+          <tr>
+            <td>STATS STATISTICS</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    <h5>
+        FOR MORE DETAILS ABOUT ACADEMIC PROGRAMMES, <a href="https://www.iitk.ac.in/doaa/academic-programmes">CLICK HERE </a>
+    </h5>
+    <br>
+    &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; <input type="button" class = "button NextButton" onclick="Next()" value="Next"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="button" class = "button ResetButton" onclick="Reset()" value="Reset">
+</body>
+<script src ="main.js"></script>
+</html>
